@@ -1,0 +1,132 @@
+\documentclass[12pt, fleqn]{article}
+\usepackage{amsmath, amssymb, enumerate, mathpazo, mathrsfs, mathrsfs}
+\usepackage[tmargin = 1.25in, lmargin = 1in, rmargin = 1in, bmargin = 1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{textcomp}
+
+\newenvironment{problem}[1]{
+\medskip \hrule \medskip
+\noindent {\bf Problem #1.}
+}{
+\medskip \hrule \medskip
+}
+
+\newenvironment{solution}{
+\medskip\noindent{\bf Solution.}}{}
+
+\setlength{\headheight}{15.2pt}
+\DeclareMathOperator{\var}{Var}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\bin}{Bin}
+\DeclareMathOperator{\poi}{Poi}
+\DeclareMathOperator{\expo}{Expo}
+\DeclareMathOperator{\U}{U}
+\DeclareMathOperator{\N}{N}
+
+\newcommand{\thm}{\noindent{\bf Theorem.} }
+\newcommand{\pf}{\noindent \emph{Proof.} }
+\newcommand{\ex}{\noindent {\bf Example.} }
+\newcommand{\Def}{\noindent {\bf Definition.} }
+\newcommand{\note}{\noindent {\bf Note.} }
+\newcommand{\question}{\noindent {\bf Question.} }
+\newcommand{\cor}{\noindent {\bf Corollary.} }
+\newcommand{\bart}[1]{\overline{{#1}}}
+\newcommand{\inv}[1]{{#1}^{-1}}
+\newcommand{\gen}[1]{\left<{#1}\right>}
+\newcommand{\normg}{\trianglelefteq}
+
+\newcommand{\partiald}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newcommand{\nilrad}{\mathfrak{N}(R)}
+\newcommand{\Jacobian}[4]{\left|
+\begin{array}{cc}
+\partiald{{#1}}{{#3}} & \partiald{{#1}}{{#4}} \\ \\
+\partiald{{#2}}{{#3}} & \partiald{{#2}}{{#4}}
+\end{array} \right|}
+\newcommand{\determinant}[4]{\left|
+\begin{array}{cc}
+{#1} & {#2} \\
+{#3} & {#4}
+\end{array} \right|}
+
+
+
+
+\begin{document}
+
+%--------- Header ---------%
+\pagestyle{myheadings}
+
+%--------- Header ---------%
+\begin{flushright}
+Student Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\
+Math 131 \\
+Homework 8 \\
+Due Date: November 9, 2018 \\
+\end{flushright}
+
+\markright{%
+ Math 131, Homework 8. 2018. \hfill \hfill  \hfill}
+
+
+\begin{center} {\Large Homework 8}  \end{center}
+
+
+\begin{problem}{1}
+
+
+\end{problem}
+
+\begin{solution}
+
+The terms $limit$ and $limit$ $point$ mean different things, but the notions are easy to confuse. For example, the constant sequence $1, 1, \cdot \cdot \cdot, 1,  \cdot \cdot \cdot$ is convergent with $limit$ 1. As a subset of the real line, however, its values are just equal to the set $\{ 1 \}$, which cannot have a limit point.
+
+\begin{enumerate}
+
+	\item Explain why the set $\{ 1 \}$ in $\mathbb{R}$ has no limit points.
+	\item To clarify the notions of limit and limit point, prove the following statement: If a convergent sequence in a metric space has infinitely many distinct points, then its limit is a limit point of the set of points of the sequence.
+	
+\end{enumerate}
+
+\end{solution}
+\pagebreak
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
+\begin{problem}{2}
+
+Give an example of a sequence $\{ x_{n} \}$ with values in $[0, 1]$ that has the following property: For every $x \in [0,1]$, we can find a subsequence $\{ x_{n_{k}} \}$ such that $x_{n_{k}} \rightarrow x$ as $k \rightarrow \infty$.
+
+\end{problem}
+
+\begin{solution}
+
+
+\end{solution}
+
+\pagebreak
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
+
+\begin{problem}{3} 
+\\
+This exercise reveals additional interesting qualities of the Cantor set. 
+\\ 
+\\
+Let $C$ be the Cantor set as defined in Rudin 2.44. Further, note that the sum $C + C = \{x+y : x,y \in C\}$. The goal of this exercise is to prove that $C + C = [0,2]$. Since $C \subset [0, 1]$, it follows immediately that $C + C \subset [0, 2]$. Thus, it remains only to show the inclusion in the other direction, namely that $[0, 2] \in \{x + y : x, y \in C \}$. That is, given any $s \in [0,2]$, we must show there exist numbers $x,y \in C$ that satisfy $x+y = s$. Do so through the following steps:
+
+\begin{enumerate}
+
+	\item Recall the notation from class in the construction of the Cantor set: $C = \cap_{n=0}^{\infty}K_{n}$ where $K_{n}$ is the union of $2^{N}$ closed subintervals of $[0,1]$ in which successive open middle third subintervals have been removed. Namely, $K_{0} = [0, 1]$, $K_{1} = [0, 1/3] \cup [2/3, 1]$, $K_{2} = [0, 1/9] \cup [2/9, 3/9] \cup [6/9, 7/9] \cup [8/9, 1]$, and so forth. Show that there exist $x_{1}, y_{1} \in K_{1}$ for which $x_{1} + y_{1} = s$.
+	\item Use induction to show in general that for an arbitrary $n \in N$, we can always find $x_{n}, y_{n} \in K_{n}$ for which $x_{n} + y_{n} = s$.
+	\item Show that we can find $x$ and $y$ in $C$ satisfying $x+  y = s$. (Note: The sequences $\{x_{n}\}$ and $\{y_{n} \}$ do not necessarily converge. Nonetheless, these can be used to produce the desired result.)
+
+\end{enumerate}
+
+\end{problem}
+	
+\begin{solution}
+
+
+\end{solution}
+\pagebreak
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\end{document}
