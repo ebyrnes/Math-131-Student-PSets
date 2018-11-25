@@ -1,0 +1,119 @@
+\documentclass[12pt, fleqn]{article}
+\usepackage{amsmath, amssymb, enumerate, mathpazo, mathrsfs, mathrsfs}
+\usepackage[tmargin = 1.25in, lmargin = 1in, rmargin = 1in, bmargin = 1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{textcomp}
+
+\newenvironment{problem}[1]{
+\medskip \hrule \medskip
+\noindent {\bf Problem #1.}
+}{
+\medskip \hrule \medskip
+}
+
+\newenvironment{solution}{
+\medskip\noindent{\bf Solution.}}{}
+
+\setlength{\headheight}{15.2pt}
+\DeclareMathOperator{\var}{Var}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\bin}{Bin}
+\DeclareMathOperator{\poi}{Poi}
+\DeclareMathOperator{\expo}{Expo}
+\DeclareMathOperator{\U}{U}
+\DeclareMathOperator{\N}{N}
+
+\newcommand{\thm}{\noindent{\bf Theorem.} }
+\newcommand{\pf}{\noindent \emph{Proof.} }
+\newcommand{\ex}{\noindent {\bf Example.} }
+\newcommand{\Def}{\noindent {\bf Definition.} }
+\newcommand{\note}{\noindent {\bf Note.} }
+\newcommand{\question}{\noindent {\bf Question.} }
+\newcommand{\cor}{\noindent {\bf Corollary.} }
+\newcommand{\bart}[1]{\overline{{#1}}}
+\newcommand{\inv}[1]{{#1}^{-1}}
+\newcommand{\gen}[1]{\left<{#1}\right>}
+\newcommand{\normg}{\trianglelefteq}
+
+\newcommand{\partiald}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newcommand{\nilrad}{\mathfrak{N}(R)}
+\newcommand{\Jacobian}[4]{\left|
+\begin{array}{cc}
+\partiald{{#1}}{{#3}} & \partiald{{#1}}{{#4}} \\ \\
+\partiald{{#2}}{{#3}} & \partiald{{#2}}{{#4}}
+\end{array} \right|}
+\newcommand{\determinant}[4]{\left|
+\begin{array}{cc}
+{#1} & {#2} \\
+{#3} & {#4}
+\end{array} \right|}
+
+
+
+
+\begin{document}
+
+%--------- Header ---------%
+\pagestyle{myheadings}
+
+%--------- Header ---------%
+\begin{flushright}
+Student Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\
+Math 131 \\
+Homework 10 \\
+Due Date: November 30, 2018 \\
+\end{flushright}
+
+\markright{%
+ Math 131, Homework 10. 2018. \hfill \hfill  \hfill}
+
+
+\begin{center} {\Large Homework 10}  \end{center}
+
+
+\begin{problem}{1}
+
+Let $a_{n} = \frac{n^{n}}{n!}$
+
+\begin{enumerate}
+
+	\item Prove that $\displaystyle{\lim_{n \to \infty}} \frac{a_{n+1}}{a_{n}} = e$
+	\item Determine (with justification) $\displaystyle{\lim_{n \to \infty}} \frac{n}{(n!)^{\frac{1}{n}}}$
+	
+	Hint: There are some very helpful theorems in our textbook. Be sure to cite them when you use them.
+\end{enumerate}
+
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+\pagebreak
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
+\begin{problem}{2}
+
+Suppose $f(x) = x^{2}$. Is $f$ is uniformly continuous on $\mathbb{R}$? Justify your conclusion.
+
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\pagebreak
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
+
+\begin{problem}{3} 
+
+In $\mathbb{R}$, let $f$ be a continuous function on the closed interval $[0, 1]$ with range also contained in $[0, 1]$. Prove that $f$ must have a fixed point; that is, show $f(x) = x$ for at least one value of $x \in [0, 1]$. (Hint: use the Intermediate Value Theorem.)
+
+\end{problem}
+	
+\begin{solution}
+
+\end{solution}
+\pagebreak
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\end{document}
